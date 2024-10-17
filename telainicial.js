@@ -16,7 +16,7 @@ export default function CalculatorApp() {
 
   const calculate = () => {
     try {
-      setInput(eval(input).toString());  
+      setInput(eval(input).toString());  // Atenção: eval pode ser perigoso
     } catch (e) {
       setInput('Erro');
     }
